@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.hand:hover{
+    animation-name: wave-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+    10% { transform: rotate(-10.0deg) }
+    20% { transform: rotate( 12.0deg) }
+    30% { transform: rotate(-10.0deg) }
+    40% { transform: rotate(  9.0deg) }
+    50% { transform: rotate(  0.0deg) }
+}
+
+.darkmode--activated p {
+    color: white !important;
+}
+
+.darkmode-toggle{
+    z-index: 9999;
+}
+.intro {
+    min-height: 110%;
+    padding-top: 15em;
+}
+
+.header-text {
+    margin-top: 15em;
+    width: 50%;
+}
+
+.header-text h2 {
+    display: block;
+    line-height: 1.5 !important;
+}
+
+.section-title{
+    text-align: right;
+    color: #27ae60;
+}
+.section-text{
+
+}
+
+
+
+.footer {
+    margin-top: 10em;
+    margin-bottom: 2em;
+}
+
+.footer a {
+    color: #27ae60;
+    margin-right: 2em;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media (min-width : 320px) and (max-width : 767px) {
+    .intro {
+        min-height: 100%;
+        padding-top: 8em;
+    }
+    .header-text{
+        margin-top: 5em;
+        width: 100%;
+    }
+    .section-title{
+        text-align: left;
+        margin-bottom: 3em;
+    }
+}
